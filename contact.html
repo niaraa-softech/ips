@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Innovative pack solution</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<STYLE>
+    a{
+  text-decoration:none;
+}
+.floating_btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  z-index: 1000;
+}
+
+@keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+.contact_icon {
+  background-color: #42db87;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  font-size:30px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translatey(0px);
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 0 0 0 #42db87;
+  -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  font-weight: normal;
+  font-family: sans-serif;
+  text-decoration: none !important;
+  transition: all 300ms ease-in-out;
+}
+
+
+.text_icon {
+  margin-top: 8px;
+  color: #707070;
+  font-size: 13px;
+}
+</STYLE>
+<body>
+
+
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
+            <img src="img/logo.png" style="width: auto; height:70px;">
+            <!-- <h2 class="mb-2 text-white">Innovative Pack Solution</h2> -->
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="products.html" class="nav-item nav-link ">Products</a>
+                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+            </div>
+         
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+  <div class="container-fluid p-0 pb-5">
+    <div class="owl-carousel header-carousel position-relative mb-5">
+
+        <div class="owl-carousel-item position-relative">
+
+            <!-- Background Image -->
+            <img 
+                class="img-fluid w-100"
+                src="img/home.png"
+                alt="Innovative Pack Solutions"
+                style="object-fit: cover; object-position: center; height: 90vh;"
+            >
+
+            <!-- Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100"
+                 style="background: rgba(0, 0, 0, 0.55);">
+            </div>
+
+            <!-- Content -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-center">
+                <div class="container">
+                    <h1 class="text-white fw-bold mb-3" style="font-size: 3rem;">
+                        Innovative Pack Solutions
+                    </h1>
+
+                    <p class="text-white mb-4" style="font-size: 1.2rem; max-width: 650px; margin: auto;">
+                        Your trusted partner for complete packaging solutions.
+                    </p>
+
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#contact" class="btn btn-primary px-4 py-3">
+                            Contact Us
+                        </a>
+                        <a href="#products" class="btn btn-outline-light px-4 py-3">
+                            Our Products
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+    <!-- Pricing End -->
+<style>
+/* ===== CONTACT SECTION ===== */
+.footer {
+    background: linear-gradient(135deg, #0a0f2c, #020617);
+    padding: 60px 0;
+}
+
+/* Glass Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 35px;
+    color: white;
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+/* Button */
+.cta-button {
+    width: 100%;
+    background: #ffb703;
+    color: #000;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ffa200;
+    transform: translateY(-2px);
+}
+
+/* Status Message */
+#formStatus {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Map */
+.map-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form {
+        margin-bottom: 30px;
+    }
+
+    iframe {
+        height: 350px;
+    }
+}
+</style>
+
+
+ <div class="footer">
+           <div class="container" id="contact">
+             
+              <div class="row">
+                
+              </div>
+              <div class="row align-items-center"style="margin-bottom: 30px;">
+             
+                <!-- Google Form -->
+                <div class="col-lg-6 col-md-12">
+             
+
+    <!-- Left: Contact Form -->
+    <div class="contact-form glass">
+      <h2 style="color: white;">Contact Us</h2>
+  <form id="contactForm">
+
+  <input type="text" name="name" class="glass" placeholder="Your Name" required>
+  <input type="tel" name="phone" class="glass" placeholder="Contact Number" required>
+  <input type="email" name="email" class="glass" placeholder="Your Email" required>
+  <textarea name="message" class="glass" placeholder="Your Message" rows="5" required></textarea>
+
+  <button class="cta-button" type="submit">Send Message</button>
+
+  <p id="formStatus" style="margin-top:10px;"></p>
+</form>
+<!-- <script>
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("formStatus");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/ajax/innovativepacksolution@gmail.com", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      status.innerHTML = "✅ Thank you! Your message has been sent.";
+      status.style.color = "white";
+      form.reset();
+    })
+    .catch(error => {
+      status.innerHTML = "❌ Something went wrong. Please try again.";
+      status.style.color = "red";
+    });
+  });
+</script> -->
+    </div></div>
+                <!-- Google Map -->
+                <div class="col-lg-6 col-md-12">
+                  <div class="map-wrapper">
+                     <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242008.7886040685!2d73.69884054287121!3d18.601640736853767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x246a4e1c1eb87c35%3A0xce34f62df128f82e!2sInnovative%20Pack%20Solution!5e0!3m2!1sen!2sin!4v1767287067336!5m2!1sen!2sin"
+                    width="100%" 
+                      height="500" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+ 
+
+
+  
+
+    <!-- Footer Start -->
+  <style>
+/* ===== FOOTER ===== */
+.site-footer {
+    background: #020617;
+    color: #ffffff;
+    padding: 50px 0 20px;
+}
+
+.site-footer h5 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.site-footer p,
+.site-footer a {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #ffb703;
+}
+
+/* Footer Top */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.footer-logo img {
+    max-width: 180px;
+}
+
+/* Quick Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+/* Address */
+.footer-address i {
+    margin-right: 8px;
+    color: #ffb703;
+}
+
+/* Divider */
+.footer-divider {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    margin: 25px 0 15px;
+}
+
+/* Copyright */
+.footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        margin: auto;
+    }
+}
+</style>
+
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-top">
+            <!-- Left: Logo -->
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Innovative Pack Solutions">
+                <p class="mt-2">
+                    Complete packaging material solutions you can trust.
+                </p>
+            </div>
+
+            <!-- Center: Quick Links -->
+            <div class="footer-links">
+                <h5 style="color: white;">Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Address -->
+            <div class="footer-address">
+                <h5 style="color: white;">Contact Info</h5>
+                <p><i class="fa fa-map-marker-alt"></i> INNOVATIVE PACK SOLUTION<br>
+G NO:560/1 NEAR HS TOTRE VIDHYALAYA<br>
+AP KURWANDI TAL AMBEGAON DIST:PUNE
+</p>
+                <p><i class="fa fa-phone"></i> +91 9766697219
+</p>
+                <p><i class="fa fa-envelope"></i> innovativepacksolution@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            © 2026 Innovative Pack Solutions. All Rights Reserved.<br>
+            Designed by <a href="https://www.niarasoftech.in">NIARA SOFTECH</a>
+        </div>
+
+    </div>
+</footer>
+
+ 
+<div class="floating_btn">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=9766697219
+">
+      <div class="contact_icon">
+        <i class="fa fa-whatsapp my-float"></i>
+      </div>
+    </a>
+  
+  </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+   
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
